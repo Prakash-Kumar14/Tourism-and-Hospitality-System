@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Processing</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/online-payment-men-hands-using-laptop-computer-online-shopping-payment-detail-page-display-online-payment-with-laptop-computer-table_256259-4116.jpg'); /* Replace 'background.jpg' with your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            background-color: #007bff;
+        }
+
+        .payment-container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 48px;
+            color: #007bff;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Processing</h1>
+
+    <div class="payment-container">
+        <div class="icon">
+            <!-- You can replace this with an actual icon or image -->
+            <i class="fa fa-credit-card"></i>
+        </div>
+
+        <!-- Check if payment was successful and display an appropriate message -->
+        {% if payment_successful %}
+            <p>Payment was successful. Thank you for your reservation!</p>
+        {% else %}
+            <p>Payment was successful. Thank you for your reservation!</p>
+        {% endif%}
+
+        <!-- You can include additional information or links as needed -->
+    </div>
+</body>
+</html>
