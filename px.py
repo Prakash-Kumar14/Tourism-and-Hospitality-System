@@ -2,9 +2,9 @@ import os
 from azure.storage.queue import QueueServiceClient
 
 # Replace these values with your actual Azure Storage account details
-account_name = "skillclass"
+account_name = ""
 account_key = os.getenv("AZURE_STORAGE_ACCOUNT_KEY")  # Use environment variable
-queue_name = "devv"
+queue_name = ""
 
 # Ensure account_key is set
 if not account_key:
